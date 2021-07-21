@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+
+html{
+    font-size: 100%
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #707070;
+    background-color: #ffeeee;
+    border-bottom: 2px solid #707070;
+}
+
+/*header*/
+header{
+    background-color: #E2DCE3;
+    width: 100vw;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+.headerlogo{
+    width: 80px;
+    margin-left: 0px;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+h1.header{
+    font-size: xx-small;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: 40px;
+    line-height: 80px;
+}
+
+.btn-menu{
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    border:1px solid rgba(158, 123, 150, 0.705);
+    color: var(--white);
+    padding: .5rem 1rem;
+}
+.main-nav{
+    background: rgba(228, 212, 224, 0.5);
+    width: 0%;
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    right: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+h4{
+    text-align: center;
+    margin: 20px;
+    font-size: x-large;
+}
+.main-nav li{
+    text-align: center;
+    margin: 2rem 0;
+}
+.main-nav a{
+    display: block;
+    text-decoration-line: none;
+    color:#707070;
+}
+.main-nav a:hover {
+  text-decoration: underline;
+}
+.main-nav.open-menu{
+    width: 15%;
+    height: 1000%;
+}
+
+/*main*/
+main{
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    font-size: 120px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 50vh;
+    width: 100vw;
+    height: 400px;
+    text-align: center;
+    background-color: #ffeeee;
+    background-size: 100vh 680px;
+    border-bottom: 2px solid #E2DCE3;
+}
+h3{
+    font-family: 'Sofia';
+    font-size: xx-large;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15%;
+    flex-wrap: nowrap;
+}
+p{
+    font-size: larger;
+    margin: 20px 40px 20px 40px;
+}
+
+/*About me*/
+div.about{
+    background-color: #fff7f7;
+    background-position: top center;
+    background-size: cover;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    height: auto;
+    border-bottom: 2px solid #E2DCE3;
+    padding-top: 15vh;
+    padding-bottom: 13vh;
+}
+ul.about{
+    list-style-type: none;
+    line-height: 300%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 60%;
+    padding-left: 5%;
+}
+p.coment{
+    padding: 5%;
+    text-align: center;
+}
+
+/*skill*/
+div.skill{
+    background-color: #fff7f7;
+    background-position: top center;
+    background-size: cover;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    height: auto;
+    border-bottom: 2px solid #E2DCE3;
+    padding-top: 15vh;
+    padding-bottom: 13vh;
+    }
+ul.skill{
+    list-style-type: square;
+    line-height: 100px;
+    list-style-position: inside;
+    font-size: x-large;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 55%;
+}
+
+/*like*/
+div.like{
+    background-color: #fff7f7;
+    background-position: top center;
+    background-size: cover;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    height: auto;
+    border-bottom: 2px solid #E2DCE3;
+    padding-top: 15vh;
+    padding-bottom: 13vh;
+}
+div.likepic{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 60%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.cafe{
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    margin: 10% 5% 30% 5%;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #E2DCE3;
+    background-position: center;
+    height: 35vh;
+    width: 80%;
+    text-align: center;
+}
+img.cafe{
+    width: 100%;
+    height: 75%;
+    text-align: center;
+} 
+.sabcafe{
+    background-color: rgba(230, 213, 226, 0.705);
+    background-position: center;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    grid-template-rows: repeat(6,45%);
+    gap: 1%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+img.sabcafe{
+    height: 40%;
+    width: 30%;
+}
+.sabcafe.open-sabcafe{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10%;
+    padding: 0px; 
+    margin: 0px;  
+    transition: 0s;
+}
+.sabcafe.close-sabcafe{
+    width: 0%;
+    transition: 0s;
+}
+div.cooking{
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    margin: 10% 5% 30% 0%;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #E2DCE3;
+    background-position: center;
+    height: 35vh;
+    width: 80%;
+    text-align: center;
+}
+img.cooking{
+    width: 100%;
+    height: 75%;
+    text-align: center;
+}
+.sabcooking{
+    background-color: rgba(230, 213, 226, 0.705);
+    background-position: center;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    grid-template-rows: repeat(6,45%);
+    gap: 1%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+img.sabcooking{
+    height: 40%;
+    width: 30%;
+}
+.sabcooking.open-sabcooking{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10%;
+    padding: 0px; 
+    margin: 0px;  
+    transition: 0s;
+}
+.sabcooking.close-sabcooking{
+    width: 0%;
+    transition: 0s;
+}  
+
+div.izakaya{
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    margin: 0% 5% 5% 5%;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #E2DCE3;
+    background-position: center;
+    height: 35vh;
+    width: 80%;
+    text-align: center;
+}
+img.izakaya{
+    width: 100%;
+    height: 75%;
+    text-align: center;
+} 
+ .sabizakaya{
+    background-color: rgba(230, 213, 226, 0.705);
+    background-position: center;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    grid-template-rows: repeat(6,45%);
+    gap: 1%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+img.sabizakaya{
+    height: 40%;
+    width: 30%;
+}
+.sabizakaya.open-sabizakaya{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10%;
+    padding: 0px; 
+    margin: 0px;  
+    transition: 0s;
+} 
+.sabizakaya.close-sabizakaya{
+    width: 0%;
+    transition: 0s;
+}
+div.live{
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    margin: 0% 5% 5% 0%;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: #E2DCE3;
+    background-position: center;
+    height: 35vh;
+    width: 80%;
+    text-align: center;
+}
+img.live{
+    width: 100%;
+    height: 75%;
+    text-align: center;
+}
+.sablive{
+    background-color: rgba(230, 213, 226, 0.705);
+    background-position: center;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    grid-template-rows: repeat(6,45%);
+    gap: 1%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+img.sablive{
+    height: 40%;
+    width: 30%;
+}
+ .sablive.open-sablive{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10%;
+    padding: 0px; 
+    margin: 0px;  
+    transition: 0s;
+}  
+.sablive.close-sablive{
+    width: 0%;
+    transition: 0s;
+}
+img:hover{
+    animation: hover-flash 3s;
+}
+@keyframes hover-flash {
+    0%{
+        opacity: .8;
+    }
+    100%{
+
+        opacity: 1;
+    }
+}
+
+/*contact*/
+div.contact{
+    background-color: #fff7f7;
+    background-position: top center;
+    background-size: cover;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    height: auto;
+    border-bottom: 2px solid #E2DCE3;
+    padding-top: 15vh;
+    padding-bottom: 13vh;
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 55%;
+}
+label{
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+}
+input[type="text"]
+input[type="email"]{
+    width: 80%;
+}
+textarea{
+    width: 80%;
+    height: 20em;
+}
+input[type="sudmit"]{
+    border:none;
+    cursor: pointer;
+    line-height: 1;
+}
+/* .google{
+    overflow: hidden;
+} */
+
+/*footer*/
+footer{
+    background-color: #E2DCE3;
+    width: 100vw;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    background-position: top;
+    flex: 1;
+}
+.footerlogo{
+    width: 80px;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+h1.footer{
+    font-size: xx-small;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: 40px;
+    line-height: 80px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}

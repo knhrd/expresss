@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <title>self_introduction</title>
+        <link rel="stylesheet" type="text/css" href=/stylesheets/style.css>
+        <link rel="icon" type="image/png" href=/javascripts/script.js>
+        <script>
+            function setID() {
+                var id = document.querySelector('#id_input').value;
+                localStorage.setItem('id', id);
+                location.href = '/other'
+            }
+        </script>
+    </head>
+    <body class="container" onload="init();">
+        <header>
+            <img class="headerlogo" src="./images/logo.png" alt="headerlogo"> 
+            <h1 class="header">KanaHarada</h1> 
+            <nav>
+                <button class="btn-menu">Menu</button>
+                <ul class="main-nav">
+                  <h4>● MENU ●</h4>  
+                  <li><a href="#about">About me</a></li>
+                  <li><a href="#skill">Skill</a></li>
+                  <li><a href="#like">Like</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2>Kana Harada</h2>
+
+        <main>
+        <div class="about" id="about">
+        <h3>About me</h3>
+        <ul class="about">
+            <li>Name: 原田佳奈</li>
+            <li>Gender: 女</li>
+            <li>Date of birth: 1998/05/07</li>
+            <li>Birth Place: 鳥取県</li>
+            <li>Blood type: B型</li>
+            <li>Tel: 080-8244-4329</li>
+            <li>Mail: kana.harada@force-corp.co.jp</li>
+        </ul>
+        <p class="coment">亜細亜大学経営学部経営学科卒業後フォース株式会社に入社。 
+            社会人1年目の23歳。</p></div>
+
+        <div class="skill" id="skill">
+        <h3>Skill (in Stady)</h3>
+        <ul class="skill">
+            <li>MOS</li>
+            <li>SQL</li>
+            <li>HTML</li>
+            <li>Linux</li>
+        </ul></div>
+
+        <div class=like id="like">
+            <h3>Like</h3>                
+                <div class="sabcafe">
+                     <div><img class="sabcafe" src=".\images\cafe.jpg"></div>
+                     <div><img class="sabcafe" src=".\images\cafe1.jpg"></div>
+                     <div><img class="sabcafe" src=".\images\cafe2.jpg"></div>
+                     <div><img class="sabcafe" src=".\images\cafe3.jpg"></div>
+                     <div><img class="sabcafe" src=".\images\cafe4.jpg"></div>
+                     <div><img class="sabcafe" src=".\images\cafe5.jpg"></div>
+                </div>
+                <div class="sabcooking">
+                    <div><img class="sabcooking" src=".\images\cooking.jpg"></div>
+                    <div><img class="sabcooking" src=".\images\cooking1.jpg"></div>
+                    <div><img class="sabcooking" src=".\images\cooking2.jpg"></div>
+                    <div><img class="sabcooking" src=".\images\cooking3.jpg"></div>
+                    <div><img class="sabcooking" src=".\images\cooking4.jpg"></div>
+                    <div><img class="sabcooking" src=".\images\cooking5.jpg"></div>
+                </div>
+                <div class="sabizakaya">
+                    <div><img class="sabizakaya" src=".\images\izakaya.jpg"></div>
+                    <div><img class="sabizakaya" src=".\images\izakaya1.jpg"></div>
+                    <div><img class="sabizakaya" src=".\images\izakaya2.jpg"></div>
+                    <div><img class="sabizakaya" src=".\images\izakaya3.jpg"></div>
+                    <div><img class="sabizakaya" src=".\images\izakaya4.jpg"></div>
+                    <div><img class="sabizakaya" src=".\images\izakaya5.jpg"></div>
+                </div>
+                <div class="sablive">
+                    <div><img class="sablive" src=".\images\live.jpg"></div>
+                    <div><img class="sablive" src=".\images\live1.jpg"></div>
+                    <div><img class="sablive" src=".\images\live2.jpg"></div>
+                    <div><img class="sablive" src=".\images\live3.jpg"></div>
+                    <div><img class="sablive" src=".\images\live4.jpg"></div>
+                    <div><img class="sablive" src=".\images\live5.jpg"></div>
+                </div>
+            <div class="likepic">
+                <div class="cafe">
+                    <p>Café</p>
+                    <img class="cafe" id="cafe" src=".\images\cafe.jpg" alt="cafe" >
+                </div>
+                <div class="cooking">
+                    <p>Cooking</p>
+                    <img class="cooking" src=".\images\cooking.jpg" alt="cooking">
+                </div>
+                <div class="izakaya">
+                    <p>Izakaya</p>
+                    <img class="izakaya" src=".\images\izakaya.jpg" alt="Izakaya">
+                </div>
+                <div class="live">
+                    <p>Live</p>
+                    <img class="live" src=".\images\live.jpg" alt="Live">
+                </div>
+            </div></div>
+            <div class="contact" id="contact">
+            <h3>Contact</h3>    
+            <form action="/other" method="post" name="contact-form">
+                <div>
+                    <label>Name</label>
+                    <input type="text" name="name" class="form-name" placeholder="お名前">
+                </div>
+                <div>
+                    <label>Mail</label>
+                    <input type="email" name="mail" class="form-mail" placeholder="メールアドレス">
+                </div>
+                <div>
+                    <label>Content</label>
+                    <textarea type="text" name="msg" class="form-control"　placeholder="メッセージを入力"></textarea>                
+                </div>
+                    <input type="submit" value="　送信　" class="btn btn-primary"></input>
+            </form></div>
+            </main>
+    
+            <footer>
+                <img class="footerlogo" src="./images/logo.png" alt="footerlogo">
+                <h1 class="footer">Kana Harada</h1>
+             </footer>
+             <script src="./javascripts/script.js"></script>
+        </body>
+    </html>
